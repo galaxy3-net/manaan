@@ -9,6 +9,7 @@ Vagrant.configure("2") do |config|
   config.winrm.username = "sysadmin"
   config.winrm.password = "cybersecurity"
   config.vm.network "private_network", ip: "10.55.55.16"
+  config.vm.communicator = :winrm
 
   #config.vm.synced_folder	"../../",	"/vagrant", owner: "1001", group: "1001"
   config.vm.synced_folder "~/repos/uci", "/repos", owner: "1001", group: "1001", mount_options: ["fmode=777", "dmode=777"], create: true
