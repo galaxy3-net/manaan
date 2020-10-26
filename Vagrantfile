@@ -6,7 +6,8 @@ Vagrant.configure("2") do |config|
   config.vm.box_version = "2020.10.25-2039"
   config.vm.hostname = "manaan"
   config.vm.guest = "windows"
-
+  config.winrm.username = "sysadmin"
+  config.winrm.password = "cybersecurity"
   config.vm.network "private_network", ip: "10.55.55.16"
 
   #config.vm.synced_folder	"../../",	"/vagrant", owner: "1001", group: "1001"
