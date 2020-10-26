@@ -3,7 +3,7 @@
 
 Vagrant.configure("2") do |config|
   config.vm.box = "galaxy3/manaan"
-  config.vm.box_version = "2020.10.25-2039"
+  config.vm.box_version = "2020.10.26-0937"
   config.vm.hostname = "manaan"
   config.vm.guest = "windows"
   config.winrm.username = "SysAdmin"
